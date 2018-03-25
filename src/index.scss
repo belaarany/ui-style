@@ -5,4 +5,7 @@
  * License: MIT
  */
 
-@import "core/index.scss"
+@import "support/index.scss";
+@import "core/index.scss";
+
+body{background:blue}

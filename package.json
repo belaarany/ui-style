@@ -2,20 +2,22 @@
   "name": "ui-style",
   "version": "0.1.0",
   "description": "GOabela UI-Style",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "tests"
-  },
+  "main": "compiled/style.css",
   "scripts": {
-    "test": "node-sass src/inde.scss -o compiled/index.css"
+    "render:dev": "node-sass src/index.scss compiled/style_dev.css --output-style nested --indent-type space --indent-width 1",
+    "dev": "npm run render:dev",
+
+    "render:build": "node-sass src/index.scss compiled/style.css --output-style compressed",
+    "build": "npm run render:build",
+
+    "all": "npm run render:dev && npm run render:build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/belaarany/ui-style.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Bela Arany",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/belaarany/ui-style/issues"
   },
