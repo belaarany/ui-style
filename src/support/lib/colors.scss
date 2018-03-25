@@ -1,1 +1,9 @@
-$red: #ff0001;
+/**
+ * Color variables
+ */
+
+// Including the color-palette
+@import "color-palette.scss";
+
+// Default page colors
+$color-font: darken($color-palette-red-1, 10%);
