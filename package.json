@@ -1,0 +1,26 @@
+{
+  "name": "ui-style",
+  "version": "0.1.0",
+  "description": "GOabela UI-Style",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node-sass src/inde.scss -o compiled/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belaarany/ui-style.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belaarany/ui-style/issues"
+  },
+  "homepage": "https://github.com/belaarany/ui-style#readme",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  }
+}
