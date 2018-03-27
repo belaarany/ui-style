@@ -5,7 +5,7 @@
 @import "color-palette.scss";
 
 // Font colors
-$font-color-default-normal: lighten($color-palette-gray-5);
+$font-color-default-normal: lighten($color-palette-gray-5, 5%);
 $font-color-default-light: lighten($color-palette-gray-5, 5%);
 $font-color-default-dark: darken($color-palette-gray-5, 5%);
 

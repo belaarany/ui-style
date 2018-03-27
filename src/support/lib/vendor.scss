@@ -1,0 +1,8 @@
+// Vendor styles
+
+
+// Google Material Icons fix
+.material-icons {
+    @include disable-select;
+    @include disable-taphighlight;
+}

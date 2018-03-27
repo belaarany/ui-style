@@ -1,3 +1,5 @@
 body{
-	color: $color-font;
+	color: $font-color-default-normal;
+	@include display-flex;
+	@include flex-row;
 }

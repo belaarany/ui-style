@@ -4,5 +4,40 @@
  * Author: Bela Arany
  * Repository: https://github.com/belaarany/ui-style
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+/*@mixin responsible-design($media) {
+    @if $media == mobile {
+        @media only screen and (max-width: $screenBreakMobile) { 
+            @content;
+        }
+    }
+    @else if $media == tab {
+        @media only screen and (min-width: $screenBreakMobile + 1) and (max-width: $screenBreakTab - 1) { 
+            @content;
+        }
+    }
+    @else if $media == desktop {
+        @media only screen and (min-width: $screenBreakTab) { 
+            @content;
+        }
+    }
+}*/
+.material-icons {
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ -webkit-touch-callout: none;
+ -webkit-text-size-adjust: none;
+ -webkit-tap-highlight-color: transparent;
+ -webkit-user-select: none; }
+
 body {
- color: #cc0000; }
+ color: #2e2e2e;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient: horizontal;
+ -webkit-box-direction: normal;
+ -ms-flex-direction: row;
+ flex-direction: row; }

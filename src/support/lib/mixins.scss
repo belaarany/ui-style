@@ -1,0 +1,88 @@
+// Mixins
+
+
+// Global element mixins
+@mixin cursor-hand {
+    cursor: hand;
+    cursor: pointer
+}
+
+@mixin disable-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@mixin disable-taphighlight {
+    -webkit-touch-callout:none;
+    -webkit-text-size-adjust:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-user-select:none;
+}
+
+// Layout mixins
+/*@mixin responsible-design($media) {
+    @if $media == mobile {
+        @media only screen and (max-width: $screenBreakMobile) { 
+            @content;
+        }
+    }
+    @else if $media == tab {
+        @media only screen and (min-width: $screenBreakMobile + 1) and (max-width: $screenBreakTab - 1) { 
+            @content;
+        }
+    }
+    @else if $media == desktop {
+        @media only screen and (min-width: $screenBreakTab) { 
+            @content;
+        }
+    }
+}*/
+
+// Flexbox mixins
+@mixin display-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+@mixin flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+@mixin flex-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+@mixin flex-grow {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+@mixin flex-spacebetween {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+// Other mixins
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
