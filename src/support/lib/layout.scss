@@ -1,9 +1,13 @@
 // Layout settings
 
 
-// Breakpoints
+// Responsible design breakpoints
 $breakpoint-tablet: 1100px;
 $breakpoint-mobile: 700px;
+
+// Layout breakpoints
+$layout-width-normal: 800px;
+$layout-width-expanded: 100%;
 
 // Z-Indexes
 $zindex-dropdown: 100;

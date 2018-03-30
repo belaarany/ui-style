@@ -40,6 +40,21 @@
     }
 }
 
+// Expendable elements
+//
+// To make the wrapper full width use `.is-expanded` class on the wrapper element.
+// To make it normal narrow width, jost do not use the above class.
+@mixin expendable {
+	&:is(.is-expanded) {
+		width: $layout-width-expanded;
+	}
+	&:not(.is-expanded) {
+		width: $layout-width-normal;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 // Flexbox mixins
 @mixin display-flex {
     display: -webkit-box;

@@ -1,0 +1,38 @@
+// Normalizing
+
+
+// Resetting values and adding box fixing
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+// Expanding the html and the body to full size
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+}
+
+// Fixing the link tag
+a {
+    display: inline-block;
+    color: $font-color-link-normal;
+    text-decoration: none;
+
+    &:hover {
+    	color: $font-color-link-hover;
+        text-decoration: underline;
+    }
+}
+
+// Fixing image to remove right-click and drag
+img {
+    @include disable-select;
+    @include disable-taphighlight;
+}

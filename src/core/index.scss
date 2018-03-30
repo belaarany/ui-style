@@ -1,10 +1,6 @@
-body{
-	color: $font-color-default-normal;
-	background: red;
-	@include display-flex;
-	@include flex-row;
+// Core files
 
-	@include responsible-design(tablet) {
-		width: 200px
-	}
-}
+
+// Layout
+@import "lib/normalize.scss";
+@import "lib/application-layout.scss";

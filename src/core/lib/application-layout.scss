@@ -1,0 +1,55 @@
+// Application layout core
+
+
+// Application main container
+.app {
+    @include display-flex;
+    @include flex-column;
+
+    height: 100%;
+    width: 100%;
+	
+	// Application header
+	.header {
+        @include display-flex;
+        @include flex-center;
+        @include flex-spacebetween;
+
+        flex-shrink: 0;
+		background: lighten(green, 60%);
+		
+		.wrapper {
+			@include expendable;
+			
+		}
+	}
+	
+	// Application body
+	.body {
+        @include display-flex;
+        @include flex-grow;
+
+        height: 100%;
+		background: lighten(yellow, 40%);	
+		
+		.wrapper {
+			@include expendable;
+			
+		}
+	}
+	
+	// Application footer
+	.footer {
+		@include display-flex;		
+        @include flex-center;
+        @include flex-spacebetween;
+
+        flex-shrink: 0;
+		background: lighten(blue, 40%);	
+		
+		.wrapper {
+			@include expendable;
+			
+		}
+	}
+}
