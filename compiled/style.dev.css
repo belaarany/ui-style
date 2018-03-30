@@ -18,6 +18,7 @@
 
 body {
 	color: #2e2e2e;
+	background: red;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
