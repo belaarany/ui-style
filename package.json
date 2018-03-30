@@ -4,7 +4,7 @@
   "description": "GOabela UI-Style",
   "main": "compiled/style.css",
   "scripts": {
-    "render:dev": "node-sass src/index.scss compiled/style.dev.css --output-style nested --indent-type space --indent-width 1",
+    "render:dev": "node-sass src/index.scss compiled/style.dev.css --output-style expanded --indent-type tab --indent-width 1",
     "dev": "npm run render:dev",
 
     "render:build": "node-sass src/index.scss compiled/style.min.css --output-style compressed",
