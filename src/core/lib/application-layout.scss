@@ -12,44 +12,66 @@
 	// Application header
 	.header {
         @include display-flex;
-        @include flex-center;
-        @include flex-spacebetween;
 
         flex-shrink: 0;
-		background: lighten(green, 60%);
+		background: $background-color-header-normal;
 		
 		.wrapper {
 			@include expendable;
 			
+			padding-top: $padding-small;
+			padding-bottom: $padding-small;
 		}
 	}
 	
-	// Application body
-	.body {
+	// Application main
+	.main {
         @include display-flex;
         @include flex-grow;
 
         height: 100%;
-		background: lighten(yellow, 40%);	
-		
-		.wrapper {
-			@include expendable;
-			
-		}
-	}
-	
-	// Application footer
-	.footer {
-		@include display-flex;		
-        @include flex-center;
-        @include flex-spacebetween;
+		width: 100%;
+		background: $background-color-default-normal;
 
-        flex-shrink: 0;
-		background: lighten(blue, 40%);	
-		
-		.wrapper {
-			@include expendable;
-			
+		// Application side navigation
+		.navigation {
+			background: lighten(red, 40%);
 		}
-	}
+
+		// Application content
+		.content {
+			@include display-flex;
+			@include flex-column;
+
+			height: 100%;
+			width: 100%;
+			overflow-y: auto;
+
+			// Application body
+			.body {
+		        @include flex-grow;
+
+				.wrapper {
+					@include expendable;
+					
+					padding-top: $padding-small;
+					padding-bottom: $padding-small;
+				}
+			}
+
+			// Application footer
+			.footer {
+		        flex-shrink: 0;
+				background: $background-color-default-normal;
+				
+				.wrapper {
+					@include expendable;
+					
+					border-top: 1px solid $border-color-default-normal;
+					padding-top: $padding-big;
+					padding-bottom: $padding-big;
+				}
+			}
+		}
+	}			
 }

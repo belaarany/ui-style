@@ -16,11 +16,15 @@ $font-color-accent-normal: $color-palette-blue-3;
 $font-color-accent-dark: $color-palette-blue-4;
 
 // Border colors
-$border-color-default-normal: $color-palette-gray-1;
-$border-color-default-light: lighten($color-palette-gray-1, 20%);
-$border-color-default-dark: $color-palette-gray-2;
+$border-color-default-normal: $color-palette-gray-2;
+$border-color-default-light: lighten($color-palette-gray-2, 20%);
+$border-color-default-dark: $color-palette-gray-3;
 
 // Backgrounds
 $background-color-default-normal: $color-palette-gray-1;
 $background-color-default-dark: darken($color-palette-gray-1, 10%);
 $background-color-default-darker: darken($color-palette-gray-1, 30%);
+
+$background-color-header-normal: $color-palette-bluegray-5;
+$background-color-header-dark: darken($color-palette-bluegray-5, 10%);
+$background-color-header-light: $color-palette-bluegray-4;

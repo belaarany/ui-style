@@ -45,11 +45,14 @@
 // To make the wrapper full width use `.is-expanded` class on the wrapper element.
 // To make it normal narrow width, jost do not use the above class.
 @mixin expendable {
-	&:is(.is-expanded) {
+	&.is-expanded {
 		width: $layout-width-expanded;
+		padding-left: $padding-normal;
+		padding-right: $padding-normal;
 	}
 	&:not(.is-expanded) {
 		width: $layout-width-normal;
+		max-width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}

@@ -70,27 +70,29 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   flex-shrink: 0;
-  background: #b3ffb3;
+  background: #263238;
 }
 
-.app .header .wrapper:is(.is-expanded) {
+.app .header .wrapper {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.app .header .wrapper.is-expanded {
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .app .header .wrapper:not(.is-expanded) {
   width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.app .body {
+.app .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,39 +100,71 @@ img {
   -ms-flex-positive: 1;
   flex-grow: 1;
   height: 100%;
-  background: #ffffcc;
-}
-
-.app .body .wrapper:is(.is-expanded) {
   width: 100%;
+  background: #FAFAFA;
 }
 
-.app .body .wrapper:not(.is-expanded) {
+.app .main .navigation {
+  background: #ffcccc;
+}
+
+.app .main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.app .main .content .body {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.app .main .content .body .wrapper {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.app .main .content .body .wrapper.is-expanded {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.app .main .content .body .wrapper:not(.is-expanded) {
   width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.app .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.app .main .content .footer {
   flex-shrink: 0;
-  background: #ccccff;
+  background: #FAFAFA;
 }
 
-.app .footer .wrapper:is(.is-expanded) {
+.app .main .content .footer .wrapper {
+  border-top: 1px solid #EEEEEE;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.app .main .content .footer .wrapper.is-expanded {
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.app .footer .wrapper:not(.is-expanded) {
+.app .main .content .footer .wrapper:not(.is-expanded) {
   width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
