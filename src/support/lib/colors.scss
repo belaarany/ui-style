@@ -15,6 +15,10 @@ $font-color-link-hover: $color-palette-blue-4;
 $font-color-accent-normal: $color-palette-blue-3;
 $font-color-accent-dark: $color-palette-blue-4;
 
+$font-color-header-normal: $color-palette-bluegray-3;
+$font-color-header-light: $color-palette-bluegray-2;
+$font-color-header-dark: darken($color-palette-bluegray-4, 5%);
+
 // Border colors
 $border-color-default-normal: $color-palette-gray-2;
 $border-color-default-light: lighten($color-palette-gray-2, 20%);

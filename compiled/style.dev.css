@@ -168,3 +168,42 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.app-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.app-header .left,
+.app-header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.app-header .left .name {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  pointer-events: none;
+  background: #37474F;
+  color: #CFD8DC;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 12px;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}

@@ -4,3 +4,8 @@
 // Layout
 @import "lib/normalize.scss";
 @import "lib/application-layout.scss";
+
+// Layout components
+@import "lib/header.scss";
+
+*{font-family: $font-family-body}

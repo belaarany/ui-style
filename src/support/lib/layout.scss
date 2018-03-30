@@ -10,10 +10,13 @@ $layout-width-normal: 800px;
 $layout-width-expanded: 100%;
 
 // Z-Indexes
-$zindex-dropdown: 100;
-$zindex-sticky: 110;
-$zindex-modal: 120;
-$zindex-tooltip: 130;
+$zindex-normal: 0;
+$zindex-header: 1000;
+$zindex-navigation: 1010;
+$zindex-modal-background: 1021;
+$zindex-modal-ui: 1022;
+$zindex-dropdown: 1030;
+$zindex-tooltip: 1040;
 
 // Paddings
 $padding-normal: 20px;
