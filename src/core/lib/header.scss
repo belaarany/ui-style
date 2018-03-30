@@ -15,7 +15,13 @@
 
 		// Application logo
 		.logo {
+			height: 35px;
+			width: 35px;
+			pointer-events: none;
 
+            &:not(last-child) {
+            	margin-right: 12px;
+            }
 		}
 
 		// Application name
@@ -24,10 +30,60 @@
 
 			pointer-events: none;
             background: $background-color-header-light;
-			color: $font-color-header-light;
-			font-size: $font-size-normal;
+			color: $font-color-header-normal;
+			font-size: $font-size-small;
 			font-weight: $font-weight-bold;
             padding: 5px 12px;
+
+            &:not(last-child) {
+            	margin-right: 30px;
+            }
+		}
+
+		// Application header navigation
+		.links {
+
+			ul {
+				list-style-type: none;
+				font-size: 0; // Fixing the whitespace if the HTML is not minified
+
+				li {
+					display: inline-block;
+
+					&:not(last-child) {
+						margin-right: 2px;					
+					}
+
+					&.active {
+
+						a {
+							color: $font-color-header-dark;
+							position: relative;
+
+							&:after {
+							    content: "";
+							    background: #37474F;
+							    height: 3px;
+							    position: absolute;
+							    bottom: 0;
+							    right: 7px;
+							    left: 7px;
+							}
+						}
+					}
+
+					a {
+						font-size: $font-size-normal;
+						color: $font-color-header-normal;
+						padding: 7px;
+
+						&:hover {
+							text-decoration: none;
+							color: $font-color-header-dark;
+						}
+					}
+				}
+			}
 		}
 	}
 

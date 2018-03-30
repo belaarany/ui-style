@@ -47,8 +47,6 @@
 @mixin expendable {
 	&.is-expanded {
 		width: $layout-width-expanded;
-		padding-left: $padding-normal;
-		padding-right: $padding-normal;
 	}
 	&:not(.is-expanded) {
 		width: $layout-width-normal;
@@ -56,6 +54,9 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
+	padding-left: $padding-normal;
+	padding-right: $padding-normal;
 }
 
 // Flexbox mixins
