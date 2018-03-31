@@ -150,8 +150,8 @@ body {
 }
 
 .app > .main > .content .header .wrapper .location {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .app > .main > .content .header .wrapper .location ul {
@@ -204,6 +204,7 @@ body {
 }
 
 .app > .main > .content .header .wrapper .tab {
+  margin-top: 18px;
   position: relative;
 }
 
@@ -243,11 +244,6 @@ body {
   padding: 8px 15px;
   text-decoration: none;
   font-size: 13px;
-  color: inherit;
-}
-
-.app > .main > .content .header .wrapper .tab nav ul li a .name {
-  font-size: inherit;
   color: inherit;
 }
 

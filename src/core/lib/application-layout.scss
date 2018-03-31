@@ -58,9 +58,10 @@
 				.wrapper {
 					@include expendable;
 
+					// Location path
 					.location {
-						padding-top: $padding-normal;
-						padding-bottom: $padding-normal;
+						margin-top: $padding-normal;
+						margin-bottom: $padding-normal;
 
 						ul {
 	        				@include display-flex;
@@ -105,7 +106,9 @@
 						}
 					}
 
+					// Content tab navigation
 					.tab {
+						margin-top: $padding-normal;
 						position: relative;
 
 						nav {
@@ -138,12 +141,7 @@
 										padding: 8px 15px;
         								text-decoration: none;
         								font-size: $font-size-small; 
-    									color: inherit;       								
-
-        								.name {
-        									font-size: inherit;
-        									color: inherit;
-        								}
+    									color: inherit;
 
         								.bubble {
         									@include border-radius(20px);
