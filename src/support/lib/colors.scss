@@ -6,7 +6,7 @@
 
 // Font colors
 $font-color-default-normal: lighten($color-palette-gray-5, 5%);
-$font-color-default-light: lighten($color-palette-gray-5, 5%);
+$font-color-default-light: $color-palette-gray-4;
 $font-color-default-dark: darken($color-palette-gray-5, 5%);
 
 $font-color-link-normal: $color-palette-blue-3;
@@ -16,18 +16,25 @@ $font-color-accent-normal: $color-palette-blue-3;
 $font-color-accent-dark: $color-palette-blue-4;
 
 $font-color-header-normal: $color-palette-bluegray-2;
+$font-color-header-light: darken($color-palette-bluegray-1, 5%);
 $font-color-header-dark: darken($color-palette-bluegray-2, 10%);
 
+$font-color-bubble-normal: $color-palette-bluegray-1;
+
 // Border colors
-$border-color-default-normal: $color-palette-gray-2;
+$border-color-default-normal: darken($color-palette-gray-2, 5%);
 $border-color-default-light: lighten($color-palette-gray-2, 20%);
 $border-color-default-dark: $color-palette-gray-3;
 
+$border-color-accent-normal: $color-palette-blue-3;
+
 // Backgrounds
 $background-color-default-normal: $color-palette-gray-1;
-$background-color-default-dark: darken($color-palette-gray-1, 10%);
+$background-color-default-dark: darken($color-palette-gray-1, 2%);
 $background-color-default-darker: darken($color-palette-gray-1, 30%);
 
 $background-color-header-normal: $color-palette-bluegray-5;
 $background-color-header-dark: darken($color-palette-bluegray-5, 10%);
 $background-color-header-light: $color-palette-bluegray-4;
+
+$background-color-bubble-normal: darken($color-palette-bluegray-3, 10%);

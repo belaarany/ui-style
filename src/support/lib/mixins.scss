@@ -54,7 +54,9 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+}
+
+@mixin application-component-padding {	
 	padding-left: $padding-normal;
 	padding-right: $padding-normal;
 }

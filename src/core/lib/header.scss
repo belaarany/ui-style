@@ -55,14 +55,12 @@
 					}
 
 					&.active {
-
 						a {
-							color: $font-color-header-dark;
 							position: relative;
 
 							&:after {
 							    content: "";
-							    background: #37474F;
+							    background: $background-color-header-light;
 							    height: 3px;
 							    position: absolute;
 							    bottom: 0;
@@ -72,14 +70,21 @@
 						}
 					}
 
+					&:not(.active) {
+						a {
+							&:hover {								
+								color: $font-color-header-dark;
+							}
+						}
+					}
+
 					a {
 						font-size: $font-size-normal;
-						color: $font-color-header-normal;
+						color: $font-color-header-light;
 						padding: 7px;
 
 						&:hover {
 							text-decoration: none;
-							color: $font-color-header-dark;
 						}
 					}
 				}

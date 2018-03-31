@@ -3,19 +3,21 @@
 
 // Font families
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 $font-family-body: "Open Sans", sans-serif;
 $font-family-mono: "Courier New", monospace;
+$font-family-icon: "Material Icons";
 
 // Font sizes
 $font-size-normal: 14px;
 $font-size-small: 13px;
-$font-size-smaller: 11px;
-$font-size-big: 18px;
-$font-size-biger: 22px;
+$font-size-smaller: 10px;
+$font-size-big: 16px;
+$font-size-bigger: 20px;
 
 // Font weights
 $font-weight-normal: 400;
 $font-weight-light: 300;
-$font-weight-bold: 600;
-$font-weight-semibold: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
