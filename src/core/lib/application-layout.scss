@@ -180,14 +180,33 @@
 				@include application-component-padding;
 
 		        flex-shrink: 0;
-		        background: $background-color-default-normal;
+			    background: $background-color-default-normal;
 				
 				.wrapper {
 					@include expendable;
+					@include display-flex;
+				    @include flex-center;
+				    @include flex-spacebetween;
 					
 					border-top: 1px solid $border-color-default-normal;
 					padding-top: $padding-big;
 					padding-bottom: $padding-big;
+					font-size: $font-size-small;
+					color: $font-color-default-light;
+
+					.left,
+					.right {
+				        @include display-flex;
+				        @include flex-center;
+
+						font-size: inherit;
+						color: inherit;
+					}
+
+					// Left side
+					.left {
+
+					}
 				}
 			}
 		}

@@ -183,7 +183,7 @@ body {
   -webkit-user-select: none;
   font-family: "Material Icons";
   content: "keyboard_arrow_right";
-  color: #616161;
+  color: #737373;
   padding: 0 6px;
   font-size: 16px;
 }
@@ -230,7 +230,7 @@ body {
 }
 
 .app > .main > .content .header .wrapper .tab nav ul li:not(.active) {
-  color: #616161;
+  color: #737373;
 }
 
 .app > .main > .content .header .wrapper .tab nav ul li a {
@@ -292,9 +292,20 @@ body {
 }
 
 .app > .main > .content .footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-top: 1px solid #e1e1e1;
   padding-top: 24px;
   padding-bottom: 24px;
+  font-size: 13px;
+  color: #737373;
 }
 
 .app > .main > .content .footer .wrapper.is-expanded {
@@ -306,6 +317,18 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.app > .main > .content .footer .wrapper .left,
+.app > .main > .content .footer .wrapper .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: inherit;
+  color: inherit;
 }
 
 .app-header {
@@ -345,7 +368,6 @@ body {
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
-  pointer-events: none;
   background: #37474F;
   color: #CFD8DC;
   font-size: 13px;
@@ -355,6 +377,11 @@ body {
 
 .app-header .left .name:not(last-child) {
   margin-right: 30px;
+}
+
+.app-header .left .name:hover {
+  text-decoration: none;
+  color: #b2c0c6;
 }
 
 .app-header .left .links ul {

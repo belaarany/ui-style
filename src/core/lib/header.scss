@@ -28,7 +28,7 @@
 		.name {
 			@include border-radius(3px);
 
-			pointer-events: none;
+			//pointer-events: none;
             background: $background-color-header-light;
 			color: $font-color-header-normal;
 			font-size: $font-size-small;
@@ -37,6 +37,11 @@
 
             &:not(last-child) {
             	margin-right: 30px;
+            }
+
+            &:hover {
+            	text-decoration: none;
+            	color: $font-color-header-dark;
             }
 		}
 

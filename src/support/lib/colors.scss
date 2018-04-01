@@ -6,7 +6,8 @@
 
 // Font colors
 $font-color-default-normal: lighten($color-palette-gray-5, 5%);
-$font-color-default-light: $color-palette-gray-4;
+$font-color-default-light: lighten($color-palette-gray-4, 7%);
+$font-color-default-lighter: $color-palette-gray-3;
 $font-color-default-dark: darken($color-palette-gray-5, 5%);
 
 $font-color-link-normal: $color-palette-blue-3;
