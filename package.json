@@ -2,18 +2,10 @@
   "name": "ui-style",
   "version": "0.1.0",
   "description": "GOabela UI-Style",
-  "main": "compiled/style.css",
+  "main": "build/style.min.css",
   "scripts": {
-    "render:dev": "node-sass src/index.scss compiled/style.dev.css --output-style expanded --indent-type space --indent-width 2",
-    "dev": "npm run render:dev",
-
-    "render:dev:watch": "node-sass src/index.scss compiled/style.dev.css --output-style expanded --indent-type space --indent-width 2 --watch src",
-    "dev:watch": "npm run render:dev:watch",
-
-    "render:build": "node-sass src/index.scss compiled/style.min.css --output-style compressed",
-    "build": "npm run render:build",
-
-    "all": "npm run render:dev && npm run render:build"
+    "build": "gulp build",
+    "watch": "gulp autobuild"
   },
   "repository": {
     "type": "git",
@@ -26,6 +18,10 @@
   },
   "homepage": "https://github.com/belaarany/ui-style#readme",
   "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
     "node-sass": "^4.8.3"
   }
 }
