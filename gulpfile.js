@@ -36,9 +36,11 @@ gulp.task("build-dev", () => {
 })
 
 // Building both files
-gulp.task("build", ["build-dev", "build-min"])
+gulp.task("build", ["build-dev", "build-min"], () => {
+	console.log("\x1b[32m" + "Build has been done" + "\x1b[0m")
+})
 
 // Starting the autobuild session
-gulp.task("autobuild", ["build-dev", "build-min"], () => {
-    gulp.watch(["src/**"], ["build-dev", "build-min"])
+gulp.task("autobuild", ["build"], () => {
+    gulp.watch(["src/**"], ["build-"])
 })
