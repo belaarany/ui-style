@@ -2,6 +2,18 @@
 let gulp = require("gulp")
 let sass = require("gulp-sass")
 let rename = require("gulp-rename")
+let header = require("gulp-header")
+
+let buildHeaderText = `\
+/*!
+ * GOabela UI Style
+ *
+ * Author: Bela Arany
+ * Repository: https://github.com/belaarany/ui-style
+ * Compiled: ${new Date().toLocaleString()}
+ */
+
+`
 
 // Building the minified version
 gulp.task("build-min", () => {
@@ -10,6 +22,7 @@ gulp.task("build-min", () => {
 	        .pipe(sass({
 	        	outputStyle: "compressed"
 	        }))
+	        .pipe(header(buildHeaderText))
 	        .pipe(rename("style.min.css"))
 	        .pipe(gulp.dest("build"))
     }, 100)
@@ -24,6 +37,7 @@ gulp.task("build-dev", () => {
 	        	indentType: "space",
 	        	indentWidth: 2
 	        }))
+	        .pipe(header(buildHeaderText))
 	        .pipe(rename("style.dev.css"))
 	        .pipe(gulp.dest("build"))
     }, 100)
