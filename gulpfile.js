@@ -4,16 +4,8 @@ let sass = require("gulp-sass")
 let rename = require("gulp-rename")
 let header = require("gulp-header")
 
-let buildHeaderText = `\
-/*!
- * GOabela UI Style
- *
- * Author: Bela Arany
- * Repository: https://github.com/belaarany/ui-style
- * Compiled: ${new Date().toLocaleString()}
- */
-
-`
+// Importing the header text
+let buildHeaderText = require("./src/header.js")
 
 // Building the minified version
 gulp.task("build-min", () => {
