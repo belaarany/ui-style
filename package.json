@@ -1,7 +1,7 @@
 {
   "name": "ui-style",
-  "version": "0.1.0",
-  "description": "GOabela UI-Style",
+  "version": "0.1.1",
+  "description": "GOabela UI-Style - The UI design that is used in my web apps.",
   "main": "build/style.min.css",
   "scripts": {
     "build": "gulp build",
