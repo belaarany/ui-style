@@ -4,12 +4,12 @@ The UI design that is used in my web apps.
 ## Usage
 Source URI:
 ```
-https://rawgit.com/belaarany/ui-style/master/compiled/style.min.css
+https://rawgit.com/belaarany/ui-style/master/build/style.min.css
 ```
 \
 Including in HTML:
 ```html
-<link rel="stylesheet" href="https://rawgit.com/belaarany/ui-style/master/compiled/style.min.css">
+<link rel="stylesheet" href="https://rawgit.com/belaarany/ui-style/master/build/style.min.css">
 ```
 
 ## Developer
